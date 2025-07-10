@@ -36,7 +36,7 @@ To address these limitations, we designed and implemented a **serverless, cross-
 
 ## 🧱 Architecture Overview
 
-![Job Monitoring Architecture drawio (2)](https://github.com/user-attachments/assets/e7f51d0a-bde2-437e-9381-f3755f5d4f83)
+![Job Monitoring Architecture drawio (2)](https://github.com/user-attachments/assets/44197012-40d9-40c9-b50b-3bb52706a3b6)
 
 ---
 
