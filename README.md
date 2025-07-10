@@ -19,7 +19,7 @@ Before this solution was implemented, support and analytics teams faced multiple
 
 ---
 
-## ✅ The Solution
+## The Solution
 
 To address these limitations, we designed and implemented a **serverless, cross-account job monitoring system** using native AWS services:
 
@@ -30,7 +30,7 @@ To address these limitations, we designed and implemented a **serverless, cross-
 
 ---
 
-## 📈 Key Benefits
+## Key Benefits
 
 * ✅ **Unified cross-account monitoring** for all critical job pipelines
 * ✅ **Near real-time detection** of job failures across Glue, Step Functions, AppFlow, and DataSync
@@ -41,13 +41,13 @@ To address these limitations, we designed and implemented a **serverless, cross-
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 ![Job Monitoring Architecture drawio (2)](https://github.com/user-attachments/assets/44197012-40d9-40c9-b50b-3bb52706a3b6)
 
 ---
 
-🧠 Lambda Function Responsibilities
+Lambda Function Responsibilities
 
 The monitoring system relies on **three purpose-specific AWS Lambda functions**, each handling a core part of the pipeline:
 
@@ -60,7 +60,7 @@ The monitoring system relies on **three purpose-specific AWS Lambda functions**,
   * Writes job run metadata (e.g., job name, status, timestamps, region, system, etc.) into a centralized **DynamoDB** table with a 7-day TTL.
   * Automatically creates **ServiceNow incidents** for job failures using defined business rules.
 
-### 🔹 Lambda 2 – Email Reporter
+### Lambda 2 – Email Reporter
 
 * **Trigger**: Scheduled (3–4 times per day via EventBridge rule)
 * **Purpose**:
@@ -69,7 +69,7 @@ The monitoring system relies on **three purpose-specific AWS Lambda functions**,
   * Applies business filtering logic (e.g., critical job types or systems).
   * Sends consolidated **email alerts** to operations and analytics teams for any flagged jobs.
 
-### 🔹 Lambda 3 – Weekly BI Exporter
+### Lambda 3 – Weekly BI Exporter
 
 * **Trigger**: Scheduled weekly (via cron rule)
 * **Purpose**:
