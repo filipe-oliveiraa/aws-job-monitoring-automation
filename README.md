@@ -1,5 +1,12 @@
 # Automated Job Monitoring – Cross-Account AWS Observability
 
+## About This Repository
+**This solution was solely developed by me (Filipe Amaro Oliveira) in a proactive manner when faced with the challenges described.**
+
+This repository serves as a **portfolio showcase** for a real-world DevOps and cloud automation solution developed as part of my work. Source code is not publicly available due to client confidentiality, but this page summarizes the architecture, purpose, and value of the system.
+
+---
+
 ## The Problem
 
 Before this solution was implemented, support and analytics teams faced multiple challenges in monitoring scheduled AWS data jobs:
@@ -73,11 +80,6 @@ The monitoring system relies on **three purpose-specific AWS Lambda functions**,
 
 ---
 
-## About This Repository
-
-This repository serves as a **portfolio showcase** for a real-world DevOps and cloud automation solution developed as part of my work. Source code is not publicly available due to client confidentiality, but this page summarizes the architecture, purpose, and value of the system.
-
----
 
 ## Contact
 
